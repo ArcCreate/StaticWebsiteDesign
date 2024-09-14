@@ -1,0 +1,128 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+:root{
+  ---DarkMagenta-color: hsl(300, 43%, 22%);
+  ---SoftPink-color: hsl(333, 80%, 67%);
+  ---DarkGrayishMagenta-color: hsl(303, 10%, 53%);
+  ---LightGrayishMagenta: hsl(300, 24%, 96%);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+body{
+  background-image: url(/images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  
+  font-family:'League+Spartan', sans-serif;
+  font-size: 1rem;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.grid{
+  display: grid;
+}
+
+.topHalf{
+  display: grid;
+  grid-template-columns: 23vw 25vw;
+  column-gap: 17vw;
+  margin-top: 5vw;
+  margin-left: 6vw
+}
+
+.primarySection h1{
+  color: var(---DarkMagenta-color);
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2vw;
+}
+
+.primarySection p{
+  color: var(---DarkGrayishMagenta-color);
+  font-size: 1.125rem;
+}
+
+.ratingSection{
+  margin-top: 2vw;
+}
+.rating{
+  background-color: var(---LightGrayishMagenta);
+  border-radius: 0.5vw;  
+  margin-bottom: 1vw;
+  padding: 0.75vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.rating:nth-child(2){
+  left: 3vw;
+}
+
+.rating:nth-child(3){
+  left: 5vw;
+}
+
+.rating h4{
+  margin-left: 1vw;
+  color: var(---DarkMagenta-color);
+  font-weight: bold;
+}
+
+.bottomHalf{
+  display: flex;
+  margin-top: 3vw;
+  margin-left: 4vw;
+}
+
+.userFeedbacks{
+  background-color: var(---DarkMagenta-color);
+  border-radius: 1vw;
+  padding: 2.5vw;
+  margin: 1.5vw;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.user{
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1.5vw;
+}
+
+.user img{
+  border-radius: 100%;
+  width: 3vw;
+  height: 3vw;
+  margin-right: 2vw;
+}
+
+.userFeedbacks:nth-child(2) {
+  transform: translateY(1vw);
+}
+
+.userFeedbacks:nth-child(3) {
+  transform: translateY(2vw);
+}
+
+.feedback, .userInfo h4{
+  color: var(---LightGrayishMagenta);
+  font-weight: 500;
+}
+
+.userInfo p{
+  color: var(---SoftPink-color);
+  font-weight: 300;
+}
